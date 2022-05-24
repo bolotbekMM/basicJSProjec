@@ -1,0 +1,101 @@
+.mode{
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.mode div{
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 100px auto 100px auto; */
+
+}
+
+.mode__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+
+}
+
+.mode h5{
+    font-size: 14px;
+    line-height: 20px;
+
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.mode h3{
+    font-size: 32px;
+    line-height: 36px;
+
+    text-align: center;
+    margin: 5px 0px 14px 0px;
+    color: #FFFFFF;
+}
+
+.mode p{
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+    margin-bottom: 36px;
+}
+
+.mode__image{
+    width: 600px;
+    height: 485px;
+    overflow: hidden;
+    border-bottom: 2px solid  #E5E5E5;
+}
+
+.mode__image img{
+    max-width: 400px;
+    height: 485px;
+    overflow: hidden;
+
+}
+.mode__setter{
+    width:100% ;
+    display:flex;
+    flex-direction: row;
+    display: inline;
+    
+}
+
+.mode__setter button{
+    margin: 42px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+
+}
+
+.mode__setter span{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    
+}

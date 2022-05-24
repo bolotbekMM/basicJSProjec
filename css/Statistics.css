@@ -1,0 +1,34 @@
+.statistics{
+    min-height: 316px;
+    width: 100%;
+    background: #FF5437;
+}
+
+.statistics__box{
+    max-width: 1440px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+    padding: 80px 160px 80px 160px;
+}
+.statistics__title{
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 96px;
+
+    text-align: center;
+    color: #FFFFFF;
+}
+.statistics__text{
+    font-size: 14px;
+    line-height: 20px;
+
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    margin: 20px 0px ;
+}

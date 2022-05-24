@@ -1,0 +1,225 @@
+.pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding:100px 0px 90px 0px;
+    margin: 0px ;
+}
+
+
+.pricing__content{
+    max-width: 568px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:  #222222;
+
+}
+
+.pricing h5{
+    font-size: 14px;
+    line-height: 20px;
+
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.pricing h3{
+    font-size: 32px;
+    line-height: 36px;
+
+    text-align: center;
+    margin: 5px 0px 14px 0px;
+}
+
+.pricing p{
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+
+    margin-bottom: 41px;
+}
+
+.pricing__boxes{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+
+    justify-content: space-around;
+    /* align-items: center; */
+    color:  #222222;
+
+}
+
+.pricing__boxes div{
+    height: 338px;
+    width: 379px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    margin: 0px 8px 10px;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.pricing__standard h6{
+    position: absolute;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #0278ED;
+    top: 45px;
+
+}
+
+.pricing__standard h1{
+    font-size: 108px;
+    line-height: 124px;
+    text-align: center;
+    letter-spacing: 8px;
+    margin: 0px;
+
+    color: #0278ED;
+
+}
+
+.pricing__standard h5{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    margin: 25px 0px 20px;
+
+    color: #222222;
+
+}
+
+.pricing__standard button{
+    height: 40px;
+    background: #0278ED;
+    border-radius: 4px;
+    padding: 10px 25px 12px;
+    border: none;
+
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+.pricing__premium h6{
+    position: absolute;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FF5437;
+    top: 45px;
+
+}
+
+.pricing__premium h1{
+    font-size: 108px;
+    line-height: 124px;
+    text-align: center;
+    letter-spacing: 8px;
+    margin: 0px;
+
+    color: #FF5437;
+
+}
+
+.pricing__premium h5{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    margin: 25px 0px 20px;
+
+    color: #222222;
+
+}
+
+.pricing__premium button{
+    height: 40px;
+    background: #FF5437;
+    border-radius: 4px;
+    padding: 10px 25px 12px;
+    border: none;
+
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+.pricing__lifetime h6{
+    position: absolute;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FF9209;
+    top: 45px;
+
+}
+
+.pricing__lifetime h1{
+    font-size: 108px;
+    line-height: 124px;
+    text-align: center;
+    letter-spacing: 8px;
+    margin: 0px;
+
+    color: #FF9209;
+
+}
+
+.pricing__lifetime h5{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    margin: 25px 0px 20px;
+
+    color: #222222;
+
+}
+
+.pricing__lifetime button{
+    height: 40px;
+    background: #FF9209;
+    border-radius: 4px;
+    padding: 10px 25px 12px;
+    border: none;
+
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}

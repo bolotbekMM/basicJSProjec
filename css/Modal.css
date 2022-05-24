@@ -1,0 +1,183 @@
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.35);
+
+}
+
+.modal__content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 38px 90px 56px 86px;
+
+    width: 506px;
+    height: 815px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    color: #000000;
+
+
+}
+
+.modal__closeBtn{
+    position:absolute;
+    top: 27.84px;
+    right: 29.84px;
+
+
+}
+
+.modal__content h4{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+
+    margin: 0px 10px 42px;
+
+}
+
+.modal__input{
+    width: 330px;
+    height: 42px;
+    padding: 9px 17px;
+    background: #F2F2F2;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+    border: none;
+    margin-bottom: 17px;
+
+}
+
+.modal__input::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    color: #7D7D7D;
+}
+
+.modal__content p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 6px 0px 11px;
+
+}
+
+.modalButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+
+.modalButton__standart{
+    width: 330px;
+    height: 42px;
+    
+    background: #FAFAFA;
+    border: 1px solid #0278ED;
+    border-radius: 4px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #0278ED;
+    margin-bottom: 11px;
+}
+
+.modalButton__premium{
+    width: 330px;
+    height: 42px;
+    
+    background: #FAFAFA;
+    border: 1px solid #FF5437;
+    border-radius: 4px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FF5437;
+    margin-bottom: 11px;
+}
+
+.modalButton__lifetime{
+    width: 330px;
+    height: 42px;
+    
+    background: #FAFAFA;
+    border: 1px solid #FF9209;
+    border-radius: 4px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FF9209;
+    margin-bottom: 11px;
+}
+
+.modalCheckbox{
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0px 31.22px;
+
+}
+.modalCheckbox div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+
+.modalCheckbox label {
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+    margin-left: 10px;
+}
+
+.modalCheckbox__input{
+    width: 24px;
+    height: 24px;
+    
+    background: #FFFFFF;
+    border: 5px solid #0278ED;
+    border-radius: 4px;
+}
+
+.modal__footerButtonn{
+    height: 40px;
+    padding: 10px 65px 12px;
+   
+
+    background: #222222;
+    border-radius: 4px;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+
+    color: #FFFFFF;
+}

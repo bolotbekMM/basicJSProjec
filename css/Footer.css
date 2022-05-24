@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 125px 0px;
+}
+
+.footer__logo{
+    margin: 13.6px 0px 27px 0px;
+}
+
+.footer__instagramm{
+    margin: 0px 26.3px 0px 20px;
+}
