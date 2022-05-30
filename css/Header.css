@@ -65,6 +65,13 @@
 
 
 }
+.nav__links button:hover{
+    background: #4E4E4E;
+}
+
+.nav__links button:focus{
+    border: 2px solid  #5AB0FF;
+}
 .nav__burger{
     display: none;
     cursor: pointer;

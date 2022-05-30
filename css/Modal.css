@@ -217,7 +217,7 @@
 .modal__footerButtonn{
     height: 40px;
     padding: 10px 65px 12px;
-   
+    cursor: pointer;
 
     background: #222222;
     border-radius: 4px;
@@ -232,6 +232,13 @@
     border: none;
 
     color: #FFFFFF;
+}
+.modal__footerButtonn:hover{
+    background: #4E4E4E;
+}
+
+.modal__footerButtonn:focus{
+    border: 1px solid #5AB0FF;
 }
 
 .modal__sendImitation{

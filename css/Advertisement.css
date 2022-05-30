@@ -60,6 +60,13 @@
     cursor: pointer;
 }
 
+.advertisement__buttons button:hover{
+    background: #4E4E4E;
+}
+
+.advertisement__buttons button:focus{
+    border: 2px solid #5AB0FF;}
+
 .advertisement__buttons span{
     font-size: 14px;
     line-height: 14px;
