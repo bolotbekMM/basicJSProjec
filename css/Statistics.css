@@ -10,8 +10,8 @@
     display: flex;
     flex-wrap: wrap;
     align-content: stretch;
-    justify-content: space-between;
-    padding: 80px 160px 80px 160px;
+    justify-content: space-around;
+    padding: 80px 160px 80.5px 127px;
 }
 .statistics__title{
     font-weight: 400;

@@ -1,10 +1,13 @@
 const modal = document.getElementById("myModal");
-const btn = document.getElementById("myBtn");
+const btn = document.getElementsByClassName("myBtn");
 const closeBtn = document.getElementsByClassName("modal__closeBtn")[0];
 
-btn.onclick = function () {
-  modal.style.display = "block";
-};
+for (let button of btn) {
+  button.onclick = function () {
+    modal.style.display = "block";
+  };
+}
+
 closeBtn.onclick = function () {
   modal.style.display = "none";
 };

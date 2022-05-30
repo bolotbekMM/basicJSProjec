@@ -79,8 +79,8 @@
             available in the App Store right now. Go check it out!
           </p>
           <div class="advertisement__buttons">
-            <button id="myBtn">buy now</button>
-            <button>Read more</button>
+            <button class="myBtn"><span>buy now</span></button>
+            <button><span>Read more</span></button>
           </div>
         </div>
         <div class="advertisement__image">
@@ -219,8 +219,8 @@
     <!-- description -->
     <div>
       <section class="technology">
-        <div class="technology__firstPart">
-          <div class="technology__conten">
+        <div class="technology__container">
+          <div class="technology__content">
             <div>
               <h5>TEchnology</h5>
               <h3>Use H(app)y to give your digital photos some pop.</h3>
@@ -240,11 +240,11 @@
         </div>
       </section>
       <section class="speedSecurity">
-        <div class="speedSecurity__box">
+        <div class="speedSecurity__container">
           <div class="technology__image">
             <img src="./assets/images/Frame4.png" alt="frame" />
           </div>
-          <div class="technology__conten">
+          <div class="technology__content">
             <div>
               <h5>Speed & security</h5>
               <h3>State-of-the-art processing capabilities.</h3>
@@ -266,8 +266,11 @@
     <div id="modeSection" class="darkMode">
       <section class="mode">
         <div class="mode__content">
-          <h5>Dark mode</h5>
-          <h3>Also available in <span>dark</span> .</h3>
+          <h5><span class="lightText">Dark</span> mode</h5>
+          <h3>
+            Also available in
+            <span class="mode__content-span lightText">dark</span> .
+          </h3>
           <p>
             Don't get blinded when using the H(app)y app at night, just turn off
             the lights. Lorem ipsum dolor sit amet.
@@ -332,19 +335,19 @@
             <h6>Standard</h6>
             <h1>$9</h1>
             <h5>Monthly</h5>
-            <button>Buy now</button>
+            <button class="myBtn">Buy now</button>
           </div>
           <div class="pricing__premium">
             <h6>Premium</h6>
             <h1>$99</h1>
             <h5>Annually</h5>
-            <button>Buy now</button>
+            <button class="myBtn">Buy now</button>
           </div>
           <div class="pricing__lifetime">
             <h6>Lifetime</h6>
             <h1>$149</h1>
             <h5>up front</h5>
-            <button>Buy now</button>
+            <button class="myBtn">Buy now</button>
           </div>
         </div>
       </section>
@@ -381,7 +384,7 @@
           <div class="testimonials__box">
             <p>
               Vestibulum ultrices, orci nec egestas pharetra, ligula est semper
-              enim, nec auctor sapien leo nec purus.
+              enim, nec auctor sapien leo nec purus nec auctor sapien leo.
             </p>
             <span>Angels Schrute</span>
             <h4>CEO and CoFounder</h4>
@@ -462,7 +465,7 @@
       </section>
     </div>
     <div>
-      <section class="footer">
+      <footer class="footer">
         <div>
           <img src="./assets/logo/logo1.svg" alt="logo-icon" />
         </div>
@@ -473,87 +476,135 @@
             alt="logo-icon"
           />
         </div>
-        <div>
-          <img src="./assets/icons/twitter.svg" alt="twitter" />
-          <img
-            class="footer__instagramm"
-            src="./assets/icons/instagramm.svg"
-            alt="instagramm"
-          />
-          <img src="./assets/icons/faceBook.svg" alt="faceBook" />
+        <div class="footer__icons">
+          <div><img src="./assets/icons/twitter.svg" alt="twitter" /></div>
+          <div>
+            <img
+              class="footer__instagramm"
+              src="./assets/icons/instagramm.svg"
+              alt="instagramm"
+            />
+          </div>
+          <div><img src="./assets/icons/faceBook.svg" alt="faceBook" /></div>
         </div>
-      </section>
+      </footer>
     </div>
 
     <!-- modal -->
 
     <div id="myModal" class="modal">
-      <div class="modal__content">
-        <img
-          class="modal__closeBtn"
-          src="./assets/icons/closeButton.svg"
-          alt="closeButton"
-        />
-        <h4>Leave a request for the purchase of goods</h4>
-        <input class="modal__input" type="text" placeholder="name" />
-        <input class="modal__input" type="text" placeholder="email" />
-        <p>Your plan?</p>
-        <div class="modalButton">
-          <button class="modalButton__standart">Standart</button>
-          <button class="modalButton__premium">Premium</button>
-          <button class="modalButton__lifetime">Lifetime</button>
+      <form class="js-form">
+        <div class="modal__content">
+          <img
+            class="modal__closeBtn"
+            src="./assets/icons/closeButton.svg"
+            alt="closeButton"
+          />
+          <h4>Leave a request for the purchase of goods</h4>
+          <div class="input__container">
+            <input
+              class="modal__input js-input-name"
+              type="text"
+              placeholder="name"
+            />
+            <span class="modal__input-nameError modal__text-error"> </span>
+          </div>
+          <div class="input__container">
+            <input
+              class="modal__input js-input-email"
+              type="text"
+              placeholder="email"
+            />
+            <span class="modal__input-emailError modal__text-error"> </span>
+          </div>
+
+          <p>Your plan?</p>
+          <form class="modalButton">
+            <div class="radiobtn">
+              <input type="radio" id="standart" name="plan" value="standart" />
+              <label class="radiobtn__standart" for="standart">Standart</label>
+            </div>
+
+            <div class="radiobtn">
+              <input type="radio" id="premium" name="plan" value="premium" />
+              <label class="radiobtn__premium" for="premium">Premium</label>
+            </div>
+
+            <div class="radiobtn">
+              <input
+                type="radio"
+                id="lifetime"
+                name="plan"
+                value="lifetime"
+                checked
+              />
+              <label class="radiobtn__lifetime" for="lifetime">Lifetime</label>
+            </div>
+          </form>
+
+          <p>How did you know about our app?</p>
+
+          <div class="modalCheckbox">
+            <div>
+              <input
+                class="modalCheckbox__input js-input-checkbox"
+                type="checkbox"
+                id="facebook"
+                name="faceBook"
+              />
+              <label for="facebook">Facebook</label>
+            </div>
+
+            <div>
+              <input
+                class="modalCheckbox__input js-input-checkbox"
+                type="checkbox"
+                id="instagram"
+                name="instagram"
+              />
+              <label for="instagram">Instagram</label>
+            </div>
+
+            <div>
+              <input
+                class="modalCheckbox__input js-input-checkbox"
+                type="checkbox"
+                id="youtube"
+                name="youtube"
+              />
+              <label for="youtube">Youtube</label>
+            </div>
+
+            <div>
+              <input
+                class="modalCheckbox__input js-input-checkbox"
+                type="checkbox"
+                id="other"
+                name="other"
+              />
+              <label for="other">Other</label>
+              <span class="modal__input-checkboxError modal__checkbox-error">
+              </span>
+              <div class="modal__sendImitation">
+                <img
+                  class="modal__sendImitation-sandglass loading"
+                  src="./assets/icons/sandglass.svg"
+                  alt="sandglass"
+                />
+                <span class="modal__sendImitation-text loading"
+                  >loading ...</span
+                >
+              </div>
+            </div>
+          </div>
+          <button class="modal__footerButtonn btn" type="submit">send</button>
         </div>
-
-        <p>How did you know about our app?</p>
-
-        <div class="modalCheckbox">
-          <div>
-            <input
-              class="modalCheckbox__input"
-              type="checkbox"
-              id="checkbox__facebook"
-              name="faceBook"
-              checked
-            />
-            <label for="faceBook">Facebook</label>
-          </div>
-
-          <div>
-            <input
-              class="modalCheckbox__input"
-              type="checkbox"
-              id="checkbox__instagram"
-              name="instagram"
-            />
-            <label for="instagram">Instagram</label>
-          </div>
-
-          <div>
-            <input
-              class="modalCheckbox__input"
-              type="checkbox"
-              id="checkbox__youtube"
-              name="youtube"
-            />
-            <label for="youtube">Youtube</label>
-          </div>
-
-          <div>
-            <input
-              class="modalCheckbox__input"
-              type="checkbox"
-              id="checkbox__other"
-              name="other"
-            />
-            <label for="other">Other</label>
-          </div>
-        </div>
-        <button class="modal__footerButtonn">send</button>
-      </div>
+      </form>
     </div>
 
     <script src="js/Header.js"></script>
     <script src="js/Modal.js"></script>
     <script src="js/Mode.js"></script>
+    <script src="js/Validation.js"></script>
   </body>
 </html>

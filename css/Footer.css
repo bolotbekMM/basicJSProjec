@@ -7,9 +7,16 @@
 }
 
 .footer__logo{
-    margin: 13.6px 0px 27px 0px;
+    margin: 5px 0px 20px 0px;
+}
+.footer__icons{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
 }
 
 .footer__instagramm{
-    margin: 0px 26.3px 0px 20px;
+    margin: 0px 27px 0px 20px;
 }

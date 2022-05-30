@@ -1,5 +1,7 @@
 .header{
     width: 100%;
+    max-height: 90px;
+    box-sizing: border-box;
     position: fixed;
     background-color:  #FFFFFF;
     z-index: 1;
@@ -8,11 +10,11 @@
 
 .nav {
     max-width: 1440px;
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    min-height: 90px;
-    padding: 25px 0px;
+    padding: 25px 145px 25px 152px;
     margin: 0px auto;
 }
 
@@ -22,6 +24,10 @@
     align-items: center;
     text-align: center;
     padding: auto;
+}
+.nav__logo a{
+    width: 39.94px;
+    height: 40px;
 }
 .nav__links{
     display: flex;

@@ -17,7 +17,6 @@
     top: 50%;
     transform: translate(-50%, -50%);
     padding: 38px 90px 56px 86px;
-
     width: 506px;
     height: 815px;
     background: #FFFFFF;
@@ -25,26 +24,25 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-
     color: #000000;
-
-
 }
 
 .modal__closeBtn{
+    cursor: pointer;
     position:absolute;
     top: 27.84px;
     right: 29.84px;
-
-
 }
 
 .modal__content h4{
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-
     margin: 0px 10px 42px;
+
+}
+.input__container{
+    position: relative;
 
 }
 
@@ -60,6 +58,28 @@
     outline: none;
     border: none;
     margin-bottom: 17px;
+
+}
+
+.modal__input:focus{
+    background: #F2F2F2;
+    border: 2px solid #5AB0FF;
+   
+}
+
+.modal__input-error{
+    background: #FFEEEE;
+
+}
+
+.modal__text-error{
+    top: 43px;
+    left: 10px;
+
+    position: absolute;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FF5437;
 
 }
 
@@ -81,56 +101,77 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 25px;
-
-}
-
-.modalButton__standart{
-    width: 330px;
-    height: 42px;
-    
-    background: #FAFAFA;
-    border: 1px solid #0278ED;
-    border-radius: 4px;
-
-    font-size: 16px;
+    width: 100%;
+	position: relative;
+	margin: 0px 0px 25px 0px;
+	font-size: 16px;
     line-height: 24px;
 
+}
+.radiobtn {
+	position: relative;
+	display: block;
+}
+
+.radiobtn label{
+    display: block;
+    padding: 9px 130px;
+    margin-bottom: 11px;
+    cursor: pointer;
+    width: 330px;
+    height: 42px;
+    background: #FAFAFA;
+    border-radius: 4px;
+}
+
+.radiobtn__standart{
     color: #0278ED;
-    margin-bottom: 11px;
+    border: 1px solid #0278ED;
 }
 
-.modalButton__premium{
-    width: 330px;
-    height: 42px;
-    
-    background: #FAFAFA;
-    border: 1px solid #FF5437;
-    border-radius: 4px;
-
-    font-size: 16px;
-    line-height: 24px;
-
+.radiobtn__premium{
     color: #FF5437;
-    margin-bottom: 11px;
+    border: 1px solid #FF5437;
 }
 
-.modalButton__lifetime{
-    width: 330px;
-    height: 42px;
-    
-    background: #FAFAFA;
-    border: 1px solid #FF9209;
-    border-radius: 4px;
-
-    font-size: 16px;
-    line-height: 24px;
-
+.radiobtn__lifetime{
     color: #FF9209;
-    margin-bottom: 11px;
+    border: 1px solid  #FF9209;
+}
+
+.radiobtn input {
+    display: none;
+}
+
+.radiobtn input:checked + .radiobtn__standart {
+    background:#0278ED;
+    color: #FAFAFA;
+}
+
+.radiobtn input:checked + .radiobtn__premium {
+    background:#FF5437;
+    color: #FAFAFA;
+} 
+
+.radiobtn input:checked + .radiobtn__lifetime{
+    background:  #FF9209;
+    color: #FAFAFA;
+} 
+
+.radiobtn input:checked + label:before {
+    content: "";
+    width: 19.9px;
+    height: 15.56px;
+    left: 15.45px;
+    top: 13.22px;
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-image: url('../assets/icons/checked.svg');
 }
 
 .modalCheckbox{
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 12px 0px 31.22px;
@@ -141,25 +182,36 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 15px;
-
 }
 
-
 .modalCheckbox label {
+    cursor: pointer;
+
     font-size: 16px;
     line-height: 24px;
-
     color: #000000;
     margin-left: 10px;
 }
 
 .modalCheckbox__input{
+    cursor: pointer;
+
     width: 24px;
     height: 24px;
-    
     background: #FFFFFF;
     border: 5px solid #0278ED;
     border-radius: 4px;
+}
+.modal__checkbox-error{
+    top: 150px;
+    left: -20px;
+    right: -35px;
+
+    position: absolute;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FF5437;
+
 }
 
 .modal__footerButtonn{
@@ -181,3 +233,56 @@
 
     color: #FFFFFF;
 }
+
+.modal__sendImitation{
+    position: absolute;
+    top: 245px;
+    margin: 0px -30px 0px -5px;
+    padding: 0px;
+
+}
+
+.modal__sendImitation-sandglass{
+    display: none;
+}
+
+.modal__loading-sandglass{
+    display: block;
+
+    width: 16px;
+    height: 20px;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-right: 17px;
+    
+}
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+         transform: rotate(-360deg);
+    }
+}
+
+
+.modal__sendImitation-text{
+    display: none;
+}
+
+.modal__loading-text{
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #7E7E7E;
+}
+
+
+
+
+
+

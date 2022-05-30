@@ -4,13 +4,12 @@
    
 }
 .faq__box{
-    width: 1440px;
-    padding: 105px 0px 100px 0px;
+    max-width: 1440px;
     margin: 0px auto;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 105px 100px 60px 100px;
+    padding: 105px 100px 85px 130px;
     color: #222222;
 }
 
@@ -30,13 +29,14 @@
 .faq__container{
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: center; */
     align-content: stretch;
-    justify-content: space-between;
 
 }
 
 .faq__item{
     max-width: 550px;
+    margin-right: 43px;
 }
 
 
@@ -48,5 +48,5 @@
 .faq__item p{
     font-size: 16px;
     line-height: 24px;
-    margin: 10px 0px 50px 0px;
+    margin: 10px 0px 25px 0px;
 }
