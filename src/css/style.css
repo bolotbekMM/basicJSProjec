@@ -1,0 +1,32 @@
+@import "./styles/Header.css"; 
+@import "./styles/Time.css"; 
+@import "./styles/Advertisement.css"; 
+@import "./styles/Features.css"; 
+@import "./styles/Statistics.css"; 
+@import "./styles/Technology.css"; 
+@import "./styles/Mode.css"; 
+@import "./styles/Pricing.css"; 
+@import "./styles/Testimnials.css"; 
+@import "./styles/Download.css"; 
+@import "./styles/Faq.css"; 
+@import "./styles/Footer.css"; 
+@import "./styles/Modal.css"; 
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    list-style: none;
+    text-decoration:none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.overflow-h{
+    overflow: hidden;
+}
+

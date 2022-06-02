@@ -8,14 +8,13 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.35);
-
+   
+}
+.js-form{
+    width: 100%;
 }
 
 .modal__content{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     padding: 38px 90px 56px 86px;
     width: 506px;
     height: 815px;
@@ -25,9 +24,12 @@
     align-items: center;
     flex-direction: column;
     color: #000000;
+    position: relative;
+    margin: 50px auto;
+       
 }
 
-.modal__closeBtn{
+.modal__close-btn{
     cursor: pointer;
     position:absolute;
     top: 27.84px;
@@ -97,7 +99,7 @@
 
 }
 
-.modalButton{
+.modal-button{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,12 +110,12 @@
     line-height: 24px;
 
 }
-.radiobtn {
+.radio-btn {
 	position: relative;
 	display: block;
 }
 
-.radiobtn label{
+.radio-btn label{
     display: block;
     padding: 9px 130px;
     margin-bottom: 11px;
@@ -124,41 +126,41 @@
     border-radius: 4px;
 }
 
-.radiobtn__standart{
+.radio-btn__standart{
     color: #0278ED;
     border: 1px solid #0278ED;
 }
 
-.radiobtn__premium{
+.radio-btn__premium{
     color: #FF5437;
     border: 1px solid #FF5437;
 }
 
-.radiobtn__lifetime{
+.radio-btn__lifetime{
     color: #FF9209;
     border: 1px solid  #FF9209;
 }
 
-.radiobtn input {
+.radio-btn input {
     display: none;
 }
 
-.radiobtn input:checked + .radiobtn__standart {
+.radio-btn input:checked + .radio-btn__standart {
     background:#0278ED;
     color: #FAFAFA;
 }
 
-.radiobtn input:checked + .radiobtn__premium {
+.radio-btn input:checked + .radio-btn__premium {
     background:#FF5437;
     color: #FAFAFA;
 } 
 
-.radiobtn input:checked + .radiobtn__lifetime{
+.radio-btn input:checked + .radio-btn__lifetime{
     background:  #FF9209;
     color: #FAFAFA;
 } 
 
-.radiobtn input:checked + label:before {
+.radio-btn input:checked + label:before {
     content: "";
     width: 19.9px;
     height: 15.56px;
@@ -167,54 +169,66 @@
     position: absolute;
     z-index: 1;
     background-repeat: no-repeat;
-    background-image: url('../assets/icons/checked.svg');
+    background-image: url('../../assets/icons/checked.svg');
 }
 
-.modalCheckbox{
+.modal-heckbox{
     position: relative;
     display: flex;
     flex-direction: column;
     margin: 12px 0px 31.22px;
 
 }
-.modalCheckbox div{
+.modal-heckbox div{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.modalCheckbox label {
-    cursor: pointer;
+.modal-heckbox__input{
+    z-index: -1;
+    opacity: 0;
+}
 
+.modal-heckbox__input+label {
+    cursor: pointer;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    margin-left: 10px;
-}
-
-.modalCheckbox__input{
-    cursor: pointer;
-
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .modal-heckbox__input+label::before {
+    content: '';
+    display: inline-block;
     width: 24px;
     height: 24px;
     background: #FFFFFF;
-    border: 5px solid #0278ED;
+    border: 2px solid #0278ED;
     border-radius: 4px;
-}
-.modal__checkbox-error{
-    top: 150px;
-    left: -20px;
-    right: -35px;
+    margin-right: 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 
+  .modal-heckbox__input:checked+label::before {
+    background-image: url("../../assets/icons/checkbox-tick.svg");
+  }
+
+
+.modal__checkbox-error{
+    top: 165px;
+    left: -10px;
+    right: -35px;
     position: absolute;
     font-size: 12px;
     line-height: 18px;
     color: #FF5437;
-
 }
 
-.modal__footerButtonn{
+.modal__footer-buttonn{
     height: 40px;
     padding: 10px 65px 12px;
     cursor: pointer;
@@ -233,23 +247,23 @@
 
     color: #FFFFFF;
 }
-.modal__footerButtonn:hover{
+.modal__footer-buttonn:hover{
     background: #4E4E4E;
 }
 
-.modal__footerButtonn:focus{
+.modal__footer-buttonn:focus{
     border: 1px solid #5AB0FF;
 }
 
-.modal__sendImitation{
+.modal__send-imitation{
     position: absolute;
-    top: 245px;
+    top: 255px;
     margin: 0px -30px 0px -5px;
     padding: 0px;
 
 }
 
-.modal__sendImitation-sandglass{
+.modal__send-imitation-sandglass{
     display: none;
 }
 
@@ -275,7 +289,7 @@
 }
 
 
-.modal__sendImitation-text{
+.modal__send-imitation-text{
     display: none;
 }
 

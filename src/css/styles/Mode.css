@@ -9,14 +9,18 @@
 
 }
 
-.darkMode{
+.dark-mode{
     background-color: #222222;
     color: #FFFFFF;
+    transition: 0.5s;
+
 
 }
 .lightMode{
     background-color: #FFFFFF;
     color: #222222;
+    transition: 0.3s;
+
 }
 
 .mode div{
@@ -96,15 +100,15 @@
     
 }
 
-.mode__lightButton{
+.mode__light-button{
     color: #FFFFFF;
 }
 
-.mode__darkButton{
+.mode__dark-button{
     color: #FF9209;
 }
 
-.mode__darkModeDarkButton{
+.mode__dark-modeDarkButton{
     color: #222222;
 }
 

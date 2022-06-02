@@ -1,4 +1,4 @@
-const navSlide = () => {
+export const NavHeader = () => {
   const burger = document.querySelector(".nav__burger");
   const nav = document.querySelector(".nav__links");
   const navLinks = document.querySelector(".nav__links li");
@@ -20,4 +20,4 @@ const navSlide = () => {
   });
 };
 
-navSlide();
+NavHeader();

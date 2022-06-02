@@ -4,7 +4,7 @@
     <title>Navbar - Html Css Javascript</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,15 +16,15 @@
     <div class="header">
       <nav class="nav">
         <div class="nav__logo">
-          <a href="#"><img src="./assets/logo/logo.svg" alt="logo" /></a>
+          <a href="#"><img src="./src/assets/logo/logo.svg" alt="logo" /></a>
         </div>
 
         <ul class="nav__links">
-          <li><a href="#idFeatures">Features</a></li>
-          <li><a href="#idPricing">Pricing</a></li>
-          <li><a href="#idTestimonials">Testimonials</a></li>
-          <li><a href="#idFaq">FAQ</a></li>
-          <li><button>Get this app</button></li>
+          <li><a href="#IdFeatures">Features</a></li>
+          <li><a href="#IdPricing">Pricing</a></li>
+          <li><a href="#IdTestimonials">Testimonials</a></li>
+          <li><a href="#IdFaq">FAQ</a></li>
+          <li><a class="link-to-download-class" href="#" target="_blank"><button>get this app</button> </a></li>
         </ul>
         <div class="nav__burger">
           <div class="nav__line1"></div>
@@ -34,65 +34,69 @@
       </nav>
     </div>
 
-    <section class="main">
+    <section id="time" class="main">
       <div class="main-box">
         <h2 class="main__title">big sale on lifetime plan</h2>
         <p class="main__text">there is very little left</p>
         <div class="time">
           <div class="time__timer">
             <div>
-              <span id="days">14</span>
+              <span id="days">0</span>
               <p>days</p>
             </div>
             <b>|</b>
           </div>
           <div class="time__timer">
             <div>
-              <span id="hours">03</span>
+              <span id="hours">00</span>
               <p>hours</p>
             </div>
             <b>|</b>
           </div>
           <div class="time__timer">
             <div>
-              <span id="minutes">26</span>
+              <span id="minutes">00</span>
               <p>minutes</p>
             </div>
             <b>|</b>
           </div>
           <div class="time__timer">
             <div>
-              <span id="seconds">59</span>
+              <span id="seconds">00</span>
               <p>seconds</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div>
+    <div class="advertisement__outer-box">
       <section class="advertisement">
+        <div class="advertisement__container">
+
         <div class="advertisement__info">
-          <img src="./assets/logo/logo.svg" alt="logo" />
+          <img src="./src/assets/logo/logo.svg" alt="logo" />
           <h3>The future of digital photos.</h3>
           <p>
             The H(app)y app is the latest & greatest in phone photography. It's
             available in the App Store right now. Go check it out!
           </p>
           <div class="advertisement__buttons">
-            <button class="myBtn"><span>buy now</span></button>
-            <button><span>Read more</span></button>
+            <button class="pricing__by-now"><span>buy now</span></button>
+            <button class="pricing__button"><span>Read more</span></button>
           </div>
         </div>
         <div class="advertisement__image">
           <img
-            src="./assets/images/FrameHalfBottom.png"
+            src="./src/assets/images/FrameHalfBottom.png"
             alt="advertisement-img"
           />
         </div>
+      </div>
+
       </section>
     </div>
     <div>
-      <section class="features" id="idFeatures">
+      <section class="features" id="IdFeatures">
         <div class="features__title">
           <h5>Features</h5>
           <h2>The latest & greatest in phone photography.</h2>
@@ -101,7 +105,7 @@
           <!-- 1st item -->
           <div class="features__item">
             <div class="features__image">
-              <img src="./assets/images/Frame1.png" alt="frame" />
+              <img src="./src/assets/images/Frame1.png" alt="frame" />
             </div>
             <div class="features__content">
               <h3>Calendar view</h3>
@@ -111,13 +115,13 @@
               </p>
             </div>
             <div class="features__box">
-              <img src="./assets/icons/box-icons/icon6.svg" alt="icons" />
+              <img src="./src/assets/icons/box-icons/icon6.svg" alt="icons" />
             </div>
           </div>
           <!-- 2nd item -->
           <div class="features__item">
             <div class="features__image">
-              <img src="./assets/images/Frame3.png" alt="frame" />
+              <img src="./src/assets/images/Frame3.png" alt="frame" />
             </div>
             <div class="features__content">
               <h3>Lists</h3>
@@ -127,14 +131,14 @@
               </p>
             </div>
             <div class="features__box">
-              <img src="./assets/icons/box-icons/icon1.svg" alt="icons" />
+              <img src="./src/assets/icons/box-icons/icon1.svg" alt="icons" />
             </div>
           </div>
           <!-- 3rd item -->
 
           <div class="features__item">
             <div class="features__image">
-              <img src="./assets/images/Frame2.png" alt="frame" />
+              <img src="./src/assets/images/Frame2.png" alt="frame" />
             </div>
             <div class="features__content">
               <h3>Varied type</h3>
@@ -144,13 +148,13 @@
               </p>
             </div>
             <div class="features__box">
-              <img src="./assets/icons/box-icons/icon2.svg" alt="icons" />
+              <img src="./src/assets/icons/box-icons/icon2.svg" alt="icons" />
             </div>
           </div>
           <!-- 4th item -->
           <div class="features__item">
             <div class="features__image">
-              <img src="./assets/images/Frame4.png" alt="frame" />
+              <img src="./src/assets/images/Frame4.png" alt="frame" />
             </div>
             <div class="features__content">
               <h3>Split-screen</h3>
@@ -160,13 +164,13 @@
               </p>
             </div>
             <div class="features__box">
-              <img src="./assets/icons/box-icons/icon3.svg" alt="icons" />
+              <img src="./src/assets/icons/box-icons/icon3.svg" alt="icons" />
             </div>
           </div>
           <!-- 5th item -->
           <div class="features__item">
             <div class="features__image">
-              <img src="./assets/images/Frame7.png" alt="frame" />
+              <img src="./src/assets/images/Frame7.png" alt="frame" />
             </div>
             <div class="features__content">
               <h3>Uploads</h3>
@@ -176,13 +180,13 @@
               </p>
             </div>
             <div class="features__box">
-              <img src="./assets/icons/box-icons/icon4.svg" alt="icons" />
+              <img src="./src/assets/icons/box-icons/icon4.svg" alt="icons" />
             </div>
           </div>
           <!-- 6th item -->
           <div class="features__item">
             <div class="features__image">
-              <img src="./assets/images/Frame6.png" alt="frame" />
+              <img src="./src/assets/images/Frame6.png" alt="frame" />
             </div>
             <div class="features__content">
               <h3>Focus mode</h3>
@@ -192,7 +196,7 @@
               </p>
             </div>
             <div class="features__box">
-              <img src="./assets/icons/box-icons/icon5.svg" alt="icons" />
+              <img src="./src/assets/icons/box-icons/icon5.svg" alt="icons" />
             </div>
           </div>
         </div>
@@ -235,14 +239,14 @@
             </div>
           </div>
           <div class="technology__image">
-            <img src="./assets/images/Frame7.png" alt="frame" />
+            <img src="./src/assets/images/Frame7.png" alt="frame" />
           </div>
         </div>
       </section>
-      <section class="speedSecurity">
-        <div class="speedSecurity__container">
+      <section class="speed-security">
+        <div class="speed-security__container">
           <div class="technology__image">
-            <img src="./assets/images/Frame4.png" alt="frame" />
+            <img src="./src/assets/images/Frame4.png" alt="frame" />
           </div>
           <div class="technology__content">
             <div>
@@ -263,13 +267,13 @@
     </div>
     <!-- MODE -->
 
-    <div id="modeSection" class="darkMode">
+    <div id="modeSection" class="dark-mode">
       <section class="mode">
         <div class="mode__content">
-          <h5><span class="lightText">Dark</span> mode</h5>
+          <h5><span class="light-text">Dark</span> mode</h5>
           <h3>
             Also available in
-            <span class="mode__content-span lightText">dark</span> .
+            <span class="mode__content-span light-text">dark</span> .
           </h3>
           <p>
             Don't get blinded when using the H(app)y app at night, just turn off
@@ -279,11 +283,11 @@
 
         <div class="mode__image">
           <div>
-            <img src="./assets/images/FrameNoBottom.png" alt="img" />
+            <img src="./src/assets/images/FrameNoBottom.png" alt="img" />
           </div>
         </div>
         <div class="mode__setter">
-          <button id="lightMode" class="mode__lightButton">
+          <button id="lightMode" class="mode__light-button">
             <svg
               width="24"
               height="24"
@@ -298,7 +302,7 @@
             </svg>
             <span>Light Mode</span>
           </button>
-          <button id="darkMode" class="mode__darkButton">
+          <button id="dark-mode" class="mode__dark-button">
             <svg
               width="24"
               height="24"
@@ -320,7 +324,7 @@
     <!-- Pricing -->
 
     <div>
-      <section class="pricing" id="idPricing">
+      <section class="pricing" id="IdPricing">
         <div class="pricing__content">
           <h5>Pricing</h5>
           <h3>A plan for every need.</h3>
@@ -332,22 +336,22 @@
 
         <div class="pricing__boxes">
           <div class="pricing__standard">
-            <h6>Standard</h6>
-            <h1>$9</h1>
+            <h6 class="pricing__plans">Standard</h6>
+            <h1>$<span class="pricing__price">9</span></h1>
             <h5>Monthly</h5>
-            <button class="myBtn">Buy now</button>
+            <button name="standartBtn" class="pricing__by-now">Buy now</button>
           </div>
           <div class="pricing__premium">
-            <h6>Premium</h6>
-            <h1>$99</h1>
+            <h6 class="pricing__plans">Premium</h6>
+            <h1>$<span class="pricing__price">99</span></h1>
             <h5>Annually</h5>
-            <button class="myBtn">Buy now</button>
+            <button name="premiumBtn" class="pricing__by-now">Buy now</button>
           </div>
           <div class="pricing__lifetime">
-            <h6>Lifetime</h6>
-            <h1>$149</h1>
+            <h6 class="pricing__plans">Lifetime</h6>
+            <h1>$<span class="pricing__price">149</span></h1>
             <h5>up front</h5>
-            <button class="myBtn">Buy now</button>
+            <button name="lifetimeBtn" class="pricing__by-now">Buy now</button>
           </div>
         </div>
       </section>
@@ -356,7 +360,7 @@
     <!-- Testimonials -->
 
     <div>
-      <section class="testimonials" id="idTestimonials">
+      <section class="testimonials" id="IdTestimonials">
         <div class="testimonials__content">
           <h5>Testimonials</h5>
           <h3>Don't take our word for it.</h3>
@@ -365,29 +369,25 @@
 
         <div class="testimonials__boxes">
           <div class="testimonials__box">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus.
+            <p class="testimonials__text">
+              
             </p>
-            <span>Pam Beesly</span>
-            <h4>Top Manager Happy Co</h4>
+            <span class="testimonials__name"></span>
+            <h4 class="testimonials__job"></h4>
           </div>
           <div class="testimonials__box">
-            <p>
-              Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus
-              libero ac, cursus quam. Aenean porta neque eget consequat
-              fringilla.
+            <p class="testimonials__text">
+              
             </p>
-            <span>Michael Scott</span>
-            <h4>SMM Specialist</h4>
+            <span class="testimonials__name"></span>
+            <h4 class="testimonials__job"></h4>
           </div>
           <div class="testimonials__box">
-            <p>
-              Vestibulum ultrices, orci nec egestas pharetra, ligula est semper
-              enim, nec auctor sapien leo nec purus nec auctor sapien leo.
+            <p class="testimonials__text">
+              
             </p>
-            <span>Angels Schrute</span>
-            <h4>CEO and CoFounder</h4>
+            <span class="testimonials__name"></span>
+            <h4 class="testimonials__job"></h4>
           </div>
         </div>
       </section>
@@ -405,7 +405,9 @@
             in convallis risus egestas non.
           </p>
           <div class="download__icon">
-            <img src="./assets/icons/appStore.png" alt="appStore" />
+            <a class="link-to-download-class" href="">
+              <img src="./src/assets/icons/appStore.png" alt="appStore" />
+            </a>
           </div>
         </div>
       </section>
@@ -414,7 +416,7 @@
     <!-- FAQ -->
 
     <div>
-      <section class="faq" id="idFaq">
+      <section class="faq" id="IdFaq">
         <div class="faq__box">
           <div class="faq__title">
             <h3>FAQ</h3>
@@ -467,145 +469,150 @@
     <div>
       <footer class="footer">
         <div>
-          <img src="./assets/logo/logo1.svg" alt="logo-icon" />
+          <img src="./src/assets/logo/logo1.svg" alt="logo-icon" />
         </div>
         <div>
           <img
             class="footer__logo"
-            src="./assets/logo/logo2.svg"
+            src="./src/assets/logo/logo2.svg"
             alt="logo-icon"
           />
         </div>
         <div class="footer__icons">
-          <div><img src="./assets/icons/twitter.svg" alt="twitter" /></div>
+          <div><img src="./src/assets/icons/twitter.svg" alt="twitter" /></div>
           <div>
             <img
               class="footer__instagramm"
-              src="./assets/icons/instagramm.svg"
+              src="./src/assets/icons/instagramm.svg"
               alt="instagramm"
             />
           </div>
-          <div><img src="./assets/icons/faceBook.svg" alt="faceBook" /></div>
+          <div><img src="./src/assets/icons/faceBook.svg" alt="faceBook" /></div>
         </div>
       </footer>
     </div>
 
     <!-- modal -->
-
-    <div id="myModal" class="modal">
-      <form class="js-form">
-        <div class="modal__content">
-          <img
-            class="modal__closeBtn"
-            src="./assets/icons/closeButton.svg"
-            alt="closeButton"
-          />
-          <h4>Leave a request for the purchase of goods</h4>
-          <div class="input__container">
-            <input
-              class="modal__input js-input-name"
-              type="text"
-              placeholder="name"
+      <div id="myModal" class="modal">
+        <form class="js-form">
+          <div class="modal__content">
+            <img
+              class="modal__close-btn"
+              src="./src/assets/icons/closeButton.svg"
+              alt="closeButton"
             />
-            <span class="modal__input-nameError modal__text-error"> </span>
-          </div>
-          <div class="input__container">
-            <input
-              class="modal__input js-input-email"
-              type="text"
-              placeholder="email"
-            />
-            <span class="modal__input-emailError modal__text-error"> </span>
-          </div>
-
-          <p>Your plan?</p>
-          <form class="modalButton">
-            <div class="radiobtn">
-              <input type="radio" id="standart" name="plan" value="standart" />
-              <label class="radiobtn__standart" for="standart">Standart</label>
-            </div>
-
-            <div class="radiobtn">
-              <input type="radio" id="premium" name="plan" value="premium" />
-              <label class="radiobtn__premium" for="premium">Premium</label>
-            </div>
-
-            <div class="radiobtn">
+            <h4>Leave a request for the purchase of goods</h4>
+            <div class="input__container">
               <input
-                type="radio"
-                id="lifetime"
-                name="plan"
-                value="lifetime"
-                checked
+                class="modal__input js-input-name"
+                type="text"
+                placeholder="name"
               />
-              <label class="radiobtn__lifetime" for="lifetime">Lifetime</label>
+              <span class="modal__input-name-error modal__text-error"> </span>
             </div>
-          </form>
-
-          <p>How did you know about our app?</p>
-
-          <div class="modalCheckbox">
-            <div>
+            <div class="input__container">
               <input
-                class="modalCheckbox__input js-input-checkbox"
-                type="checkbox"
-                id="facebook"
-                name="faceBook"
+                class="modal__input js-input-email"
+                type="text"
+                placeholder="email"
               />
-              <label for="facebook">Facebook</label>
+              <span class="modal__input-email-error modal__text-error"> </span>
             </div>
 
-            <div>
-              <input
-                class="modalCheckbox__input js-input-checkbox"
-                type="checkbox"
-                id="instagram"
-                name="instagram"
-              />
-              <label for="instagram">Instagram</label>
-            </div>
-
-            <div>
-              <input
-                class="modalCheckbox__input js-input-checkbox"
-                type="checkbox"
-                id="youtube"
-                name="youtube"
-              />
-              <label for="youtube">Youtube</label>
-            </div>
-
-            <div>
-              <input
-                class="modalCheckbox__input js-input-checkbox"
-                type="checkbox"
-                id="other"
-                name="other"
-              />
-              <label for="other">Other</label>
-              <span class="modal__input-checkboxError modal__checkbox-error">
-              </span>
-              <div class="modal__sendImitation">
-                <img
-                  class="modal__sendImitation-sandglass loading"
-                  src="./assets/icons/sandglass.svg"
-                  alt="sandglass"
+            <p>Your plan?</p>
+            <form class="modal-button">
+              <div class="radio-btn">
+                <input
+                  type="radio"
+                  id="standart"
+                  name="plan"
+                  value="standart"
                 />
-                <span class="modal__sendImitation-text loading"
-                  >loading ...</span
+                <label class="radio-btn__standart radio-btn__plans" for="standart"
+                  >Standart</label
                 >
               </div>
-            </div>
-          </div>
-          <button class="modal__footerButtonn btn" type="submit">send</button>
-        </div>
-      </form>
-    </div>
 
-    <script src="js/Header.js"></script>
-    <script src="js/Modal.js"></script>
-    <script src="js/Mode.js"></script>
-    <script src="js/Validation.js"></script>
-    <script src="js/Timer.js"></script>
+              <div class="radio-btn">
+                <input type="radio" id="premium" name="plan" value="premium" />
+                <label class="radio-btn__premium radio-btn__plans" for="premium">Premium</label>
+              </div>
+
+              <div class="radio-btn">
+                <input
+                  type="radio"
+                  id="lifetime"
+                  name="plan"
+                  value="lifetime"
+                  checked
+                />
+                <label class="radio-btn__lifetime radio-btn__plans" for="lifetime"
+                  >Lifetime</label
+                >
+              </div>
+            </form>
+
+            <p>How did you know about our app?</p>
+
+            <div class="modal-heckbox">
+              <div>
+                <input
+                  class="modal-heckbox__input js-input-checkbox"
+                  type="checkbox"
+                  id="facebook"
+                  name="faceBook"
+                />
+                <label for="facebook">Facebook</label>
+              </div>
+
+              <div>
+                <input
+                  class="modal-heckbox__input js-input-checkbox"
+                  type="checkbox"
+                  id="instagram"
+                  name="instagram"
+                />
+                <label for="instagram">Instagram</label>
+              </div>
+
+              <div>
+                <input
+                  class="modal-heckbox__input js-input-checkbox"
+                  type="checkbox"
+                  id="youtube"
+                  name="youtube"
+                />
+                <label for="youtube">Youtube</label>
+              </div>
+
+              <div>
+                <input
+                  class="modal-heckbox__input js-input-checkbox"
+                  type="checkbox"
+                  id="other"
+                  name="other"
+                />
+                <label for="other">Other</label>
+                <span class="modal__input-checkbox-error modal__checkbox-error">
+                </span>
+                <div class="modal__send-imitation">
+                  <img
+                    class="modal__send-imitation-sandglass loading"
+                    src="./src/assets/icons/sandglass.svg"
+                    alt="sandglass"
+                  />
+                  <span class="modal__send-imitation-text loading"
+                    >loading ...</span
+                  >
+                </div>
+              </div>
+            </div>
+            <button class="modal__footer-buttonn btn" type="submit">send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="src/js/App.js"></script>
+    
   </body>
 </html>
