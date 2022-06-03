@@ -16,8 +16,8 @@
 
 .modal__content{
     padding: 38px 90px 56px 86px;
-    width: 506px;
-    height: 815px;
+    max-width: 506px;
+    min-height: 815px;
     background: #FFFFFF;
     border-radius: 4px;
     display: flex;
@@ -45,12 +45,13 @@
 }
 .input__container{
     position: relative;
+    width: 100%;
 
 }
 
 .modal__input{
-    width: 330px;
-    height: 42px;
+    width: 100%;
+    max-height: 42px;
     padding: 9px 17px;
     background: #F2F2F2;
     border-radius: 4px;
@@ -59,6 +60,7 @@
     line-height: 24px;
     outline: none;
     border: none;
+    margin: 0px 0px 17px;
     margin-bottom: 17px;
 
 }
@@ -111,16 +113,21 @@
 
 }
 .radio-btn {
+    width: 100%;
 	position: relative;
 	display: block;
+    padding: auto;
 }
 
 .radio-btn label{
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 9px 130px;
-    margin-bottom: 11px;
+    margin:0px 0px 11px;
     cursor: pointer;
-    width: 330px;
+    max-width: 330px;
     height: 42px;
     background: #FAFAFA;
     border-radius: 4px;
@@ -304,22 +311,58 @@
 
 @media screen and (max-width:1024px) {
     .modal__content{
-        padding: 38px 45px 15px 40px;
+        padding: 38px 90px 56px 86px;
+
+        /* padding: 38px 45px 15px 40px; */
         max-width: 506px;
-        height: 815px;
+        min-height: 815px;
         margin: 20px auto;
-           
     }
     
 }
 @media screen and (max-width:588px) {
     .modal__content{
-        padding: 48px 20px 15px 20px;
+        padding: 38px 90px 56px 86px;
+
+        /* padding: 48px 20px 15px 20px; */
         max-width: 506px;
-        max-height: 815px;
+        min-height: 815px;
         margin: 10px auto;
            
     }
+    
+}
+
+@media screen and (max-width:500px) {
+    .modal__content{
+        padding: 38px 40px 56px 36px;
+
+        /* padding: 48px 30px 10px; */
+        margin: 30px;
+           
+    }
+    .radio-btn__plans{
+        width: 100%;
+    }
+    .modal__content h4{
+        font-size: 20px;
+        margin: 0px 25px 22px;
+    
+    }
+    .radio-btn label{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .modal__input{
+        width: 100%;
+        
+        padding: 9px 10px;
+        
+        margin-bottom: 17px;
+    
+    }
+    
     
 }
 
