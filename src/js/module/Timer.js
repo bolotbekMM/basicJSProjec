@@ -26,10 +26,10 @@ export function CountDown() {
   const second = Math.floor(diff / 1000) % 60;
 
   if (diff > 0) {
-    days.innerHTML = day;
-    hours.innerHTML = hour < 10 ? "0" + hour : hour;
-    minutes.innerHTML = minute < 10 ? "0" + minute : minute;
-    seconds.innerHTML = second < 10 ? "0" + second : second;
+    days.textContent = day;
+    hours.textContent = hour < 10 ? "0" + hour : hour;
+    minutes.textContent = minute < 10 ? "0" + minute : minute;
+    seconds.textContent = second < 10 ? "0" + second : second;
   } else {
     time.setAttribute("class", "timer__close");
     clearTimeout(timerInterval);

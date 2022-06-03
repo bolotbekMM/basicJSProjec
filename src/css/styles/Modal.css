@@ -1,7 +1,7 @@
 .modal{
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     left: 0;
     top: 0;
     width: 100%;
@@ -300,6 +300,27 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #7E7E7E;
+}
+
+@media screen and (max-width:1024px) {
+    .modal__content{
+        padding: 38px 45px 15px 40px;
+        max-width: 506px;
+        height: 815px;
+        margin: 20px auto;
+           
+    }
+    
+}
+@media screen and (max-width:588px) {
+    .modal__content{
+        padding: 48px 20px 15px 20px;
+        max-width: 506px;
+        max-height: 815px;
+        margin: 10px auto;
+           
+    }
+    
 }
 
 

@@ -1,23 +1,17 @@
-export const NavHeader = () => {
-  const burger = document.querySelector(".nav__burger");
-  const nav = document.querySelector(".nav__links");
-  const navLinks = document.querySelector(".nav__links li");
+export const Header = () => {
+  const menuOpenIcon = document.getElementById("js-burger-menu__icon");
+  const menuCloseIson = document.querySelectorAll(
+    ".js-burger-menu__icon-close"
+  );
 
-  burger.addEventListener("click", () => {
-    nav.classList.toggle("nav-active");
+  const menuToggle = () => {
+    menuOpenIcon.classList.toggle("active");
+    document.body.classList.toggle("scroll-none");
+  };
 
-    navLinks.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = " ";
-      } else {
-        link.style.animation = `navLinkFade 0.5s ease forward ${
-          index / 2 + 0.2
-        }s`; 
-      }
-    });
+  menuCloseIson.forEach((el) => el.addEventListener("click", menuToggle));
 
-    burger.classList.toggle("toggle");
-  });
+  menuOpenIcon.addEventListener("click", menuToggle);
 };
 
-NavHeader();
+
