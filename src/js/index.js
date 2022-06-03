@@ -7,6 +7,9 @@ import { Testimonials } from "./module/Testimonials.js";
 import { CountDown } from "./module/Timer.js";
 import { Validation } from "./module/Validation.js";
 
+import '../css/style.css'
+
+window.onload = () => {
 Modal();
 Mode();
 Validation();
@@ -15,3 +18,4 @@ NavHeader();
 LinkToDownload();
 Testimonials();
 Plans();
+}

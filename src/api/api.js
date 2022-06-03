@@ -1,12 +1,7 @@
-export async function dataFromServerFunc() {
-  let danniy;
+import config from "./config.json";
 
-  const data = await fetch("./api/config.json")
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      danniy = data;
-    });
+export async function dataFromServerFunc() {
+  let danniy = config;
+
   return danniy;
 }
