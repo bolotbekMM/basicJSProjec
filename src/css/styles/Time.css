@@ -47,8 +47,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex-wrap: wrap;
-    align-content: stretch;
+   
     margin-bottom: 57px;
 }
 
@@ -94,4 +93,56 @@
     font-weight: 400;
     font-size: 100px;
     line-height: 150px;
+}
+
+@media screen and (max-width:1024px) {
+    .time{
+        margin-bottom: 0px;
+    }
+   
+    .main__text{
+        font-size: 24px;
+    }
+
+    .time__timer div{
+        width: 80px;
+    }
+    .time__timer span{
+        font-size: 70px;
+    }
+    .time__timer p{
+        font-size: 18px;
+    }
+    .time__timer b{
+        font-size: 70px;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    .time{
+        margin-bottom: 0px;
+    }
+    .main__title{
+        font-size:40px;
+    }
+    .main__text{
+        font-size: 18px;
+    }
+
+    .time__timer div{
+        width: 60px;
+    }
+    .time__timer span{
+        font-size: 40px;
+    }
+    .time__timer p{
+       
+        font-size: 12px;
+    }
+    .time__timer b{
+        font-size: 40px;
+    }
+
 }

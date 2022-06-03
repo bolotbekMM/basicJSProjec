@@ -32,3 +32,27 @@
 
     margin: 20px 0px ;
 }
+
+@media screen and (max-width:720px) {
+    .statistics__box{
+        padding: 40px 50px 40px 50px;
+    }
+
+    .statistics__title{
+        font-size: 60px;
+    }
+    .statistics__text{
+        font-size: 14px;
+        line-height: 20px;
+    
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    
+        margin: 20px 0px ;
+    }
+    
+
+}
+

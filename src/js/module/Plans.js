@@ -1,4 +1,4 @@
-import { dataFromServerFunc } from "../../api/index.js";
+import { dataFromServerFunc } from "../../api/api.js";
 
 const price = document.getElementsByClassName("pricing__price");
 const plan = document.getElementsByClassName("pricing__plans");

@@ -19,11 +19,13 @@ export function openModalFunc(event) {
   modal.style.display = "block";
   document.body.classList.add("overflow-h");
 
-  event.target.name == "standartBtn"
-    ? (standart.checked = true)
-    : event.target.name == "premiumBtn"
-    ? (premium.checked = true)
-    : (lifetime.checked = true);
+  if (event.target.name == "standartBtn") {
+    standart.checked = true;
+  } else if (event.target.name == "premiumBtn") {
+    premium.checked = true;
+  } else {
+    lifetime.checked = true;
+  }
 }
 
 export function closeModalFunc() {

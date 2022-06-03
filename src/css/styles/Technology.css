@@ -71,3 +71,51 @@
 .technology__image img {
   width: 376px;
 }
+
+@media screen and (max-width:1124px) {
+  .technology__container {
+    padding: 50px 70px 0px 60px;
+  }
+  .speed-security__container {
+    padding: 50px 60px 0px 70px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .technology__container {
+    padding: 20px 20px 0px 20px;
+  }
+  .speed-security__container {
+    padding: 20px 20px 0px 20px;
+  }
+
+  .technology__content p {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+@media screen and (max-width:420px) {
+  .technology__container {
+    padding: 20px 10px 0px 10px;
+  }
+  .speed-security__container {
+    padding: 20px 10px 0px 10px;
+  }
+
+  .technology__content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .technology__image img {
+    width: 300px;
+  }
+  .technology__image {
+    max-height: 460px;
+    overflow: hidden;
+  }
+  .technology__content h5 {
+    margin-top: 10px;
+  }
+}

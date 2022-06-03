@@ -4,6 +4,7 @@ const closeModal = document.getElementById("myModal");
 const inputName = document.querySelector(".js-input-name");
 const inputEmail = document.querySelector(".js-input-email");
 const inputCheckbox = document.querySelectorAll(".js-input-checkbox");
+const modalPlans = document.getElementsByClassName("radio__button");
 const nameErrorText = document.querySelector(".modal__input-name-error");
 const emailErrorText = document.querySelector(".modal__input-email-error");
 const checkboxErrorText = document.querySelector(
@@ -25,7 +26,6 @@ function addClassFunc(element, className) {
 function removeClassFunc(element, className) {
   return element.classList.remove(className);
 }
-
 
 const nameValidateFunc = () => {
   if (inputName.value.trim().length == 0) {
@@ -72,11 +72,17 @@ const emailValidateFunc = () => {
   }
 };
 
+const checkboxFormValue = [];
+
 const checkboxValidateFunc = () => {
   const checkbox = Array.from(inputCheckbox).filter((item) => item.checked);
 
   if (checkbox.length > 0) {
     addTextContentFunc(checkboxErrorText, null);
+
+    for (let item of checkbox) {
+      checkboxFormValue.push(item.name);
+    }
 
     return true;
   } else {
@@ -85,6 +91,23 @@ const checkboxValidateFunc = () => {
     return false;
   }
 };
+
+function formData() {
+  const planValue = Array.from(modalPlans).filter((item) => item.checked);
+
+  let chooesnPlan = null;
+  for (let item of planValue) {
+    chooesnPlan = item.value;
+  }
+  const formValue = {
+    name: inputName.value,
+    email: inputEmail.value,
+    aboutUs: checkboxFormValue,
+    plan: chooesnPlan,
+  };
+
+  console.log(formValue);
+}
 
 export function Validation() {
   form.onsubmit = function (event) {
@@ -98,6 +121,7 @@ export function Validation() {
       loading[1].classList.add("modal__loading-text");
 
       setTimeout(() => {
+        formData();
         clearForm();
       }, 2000);
       return true;

@@ -12,7 +12,7 @@ export const NavHeader = () => {
       } else {
         link.style.animation = `navLinkFade 0.5s ease forward ${
           index / 2 + 0.2
-        }s`;
+        }s`; 
       }
     });
 

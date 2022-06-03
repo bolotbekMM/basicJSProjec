@@ -122,3 +122,60 @@
 .advertisement__image img{
     width: 376px;
 }
+
+
+@media screen and (max-width:720px) {
+
+    .advertisement{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0px auto;
+        padding: 0px;
+    
+    }
+    
+    
+      .advertisement__container {
+        width: 100%;
+        margin: 20px 0px 0px;
+        padding: 0px 5% 0px 5%;
+            
+      }
+    
+        
+    .advertisement__info img{
+        width: 160px;
+        height: 50px;
+        overflow: hidden;
+    
+    
+    }
+    
+    .advertisement__info h3{
+        font-size: 42px;
+    
+    }
+    
+    .advertisement__info p{
+        font-size: 14px;
+    
+    }
+    .advertisement__buttons {
+        display: flex;
+        justify-content: center;      
+    }
+
+    .advertisement__image{
+        width: 276px;
+        height: 348px;
+        margin: 30px 0px 0px 0px;
+        overflow: hidden;
+    }
+    
+    .advertisement__image img{
+        width: 276px;
+    }
+    
+
+}

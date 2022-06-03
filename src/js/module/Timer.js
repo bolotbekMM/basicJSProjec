@@ -1,4 +1,4 @@
-import { dataFromServerFunc } from "../../api/index.js";
+import { dataFromServerFunc } from "../../api/api.js";
 
 const days = document.getElementById("days");
 const hours = document.getElementById("hours");
